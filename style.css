@@ -1,0 +1,265 @@
+body {
+    background: linear-gradient(135deg, #e0f7ff 0%, #b3e0ff 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding-top: 70px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 150, 0.1);
+    border: none;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #0066cc !important;
+    font-size: 1.5rem;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.hero-section {
+    background: url('img/photo_2025-04-17_19-44-40.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: -70px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 102, 204, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.3s both;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    animation: fadeInUp 1s ease 0.6s both;
+}
+
+.btn-primary {
+    background-color: #ff6600;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.btn-primary:hover {
+    background-color: #ff8533;
+    transform: scale(1.05);
+}
+
+.section-title {
+    text-align: center;
+    margin: 0 0 50px;
+    color: #0066cc;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #ff6600;
+    margin: 15px auto;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 150, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.price-table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 150, 0.1);
+    margin-bottom: 30px;
+}
+
+.price-header {
+    background: #0066cc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.price-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-item:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 150, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 150, 0.1);
+}
+
+.contact-info-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 150, 0.1);
+    height: 100%;
+}
+
+footer {
+    background: #0066cc;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
+
+/* Анимации */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 102, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 0, 0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .section-padding {
+        padding: 50px 0;
+    }
+}
