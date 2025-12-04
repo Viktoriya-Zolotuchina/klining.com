@@ -68,4 +68,5 @@ $(document).ready(function() {
     
     // Добавляем класс active к первому пункту меню при загрузке
     $('nav a[href="#home"]').addClass('active');
+
 });
